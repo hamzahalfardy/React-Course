@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+*{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+}
+
 .food-logo{
     width: 70px;
     height: auto;
@@ -39,31 +45,36 @@
 }
 
 
-.banner{
+.banner {
   width: 100%;
-  height: 550px; /* your desired height */
-  overflow: hidden;
+  height: 55vh; /* relative to screen height */
+  max-height: 600px;
+  min-height: 300px;
+  overflow-x: hidden;
   position: relative;
   cursor: pointer;
-}
-.banner img{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  overflow-y: hidden;
+  margin: 0px;
 }
 
-.Lorem{
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.Lorem {
   color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
   font-style: normal;
+  padding: 1rem;
+  width: 90%;
+  max-width: 600px;
 }
 
 .Lorem h1{
@@ -78,7 +89,8 @@
   color: #fff;
 }
 
-.Lorem button{
+.Lorem button, 
+.food-taste button{
   background-color: orange;
   border: none;
   border-radius: 15px;
@@ -86,8 +98,59 @@
   color: white;
   padding: 10px 20px;
   font-size: medium;
+  cursor: pointer;
 }
 
+.food-taste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.food-listed {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color ease 0.8s;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.food-listed:hover {
+  background-color: rgb(255, 187, 0);
+}
+
+.food-listed img {
+  width: 90px;    
+  height: 90px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.food-content h3 {
+  margin-bottom: 5px;
+}
+
+.food-content p {
+  margin-top: 0;
+  font-size: 0.95rem;
+  color: rgb(120, 118, 118);
+  line-height: 1.4;
+}
 
 
 

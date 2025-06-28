@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {  NavBar, Restaurant } from './foods/Food'
+import {  NavBar, Restaurant, Taste } from './foods/Food'
 import reportWebVitals from './reportWebVitals';
 
 
@@ -16,6 +16,13 @@ const topImage = ReactDOM.createRoot(document.getElementById('top-image'));
 topImage.render(
     <React.StrictMode>
         <Restaurant />
+    </React.StrictMode>
+);
+
+
+ReactDOM.createRoot(document.getElementById('taste')).render(
+    <React.StrictMode>
+        <Taste />
     </React.StrictMode>
 )
 
