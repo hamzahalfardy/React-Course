@@ -1,0 +1,12 @@
+.food-nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* align-items: center; */
+    justify-items: center;
+    gap: auto;
+    margin: 30px;
+    /* margin-right: 30px; */
+}
+
+

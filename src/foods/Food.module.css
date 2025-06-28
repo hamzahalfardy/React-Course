@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.food-logo{
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+.menu{
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    gap: 25px;
+}
+
+.menu div{
+    justify-items: center;
+    align-content: center;
+    color: gray;
+  cursor: pointer;
+}
+
+.contact {
+  background-color: orange;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 8px;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.8s, color ease 0.3s;
+}
+
+.contact span{
+  color: #fff;
+}
+.contact:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+
+.banner{
+  width: 100%;
+  height: 550px; /* your desired height */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.banner img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Lorem{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.Lorem h1{
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.Lorem p{
+  font-size: larger;
+  width: 600px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.Lorem button{
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: medium;
+}
+
+
+
+
