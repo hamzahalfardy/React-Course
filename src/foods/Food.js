@@ -1,3 +1,4 @@
+import React from 'react';
 import './Food.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBlogger, faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -6,6 +7,8 @@ import { faFaceGrinTongue } from '@fortawesome/free-regular-svg-icons/faFaceGrin
 import styles from "./Food.module.css"
 import { faCommentDots, faKitchenSet, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons/faBookOpenReader';
+import { images } from "../data"
+import { Cards } from './Cards';
 
 
 export const NavBar = () => {
@@ -102,7 +105,29 @@ export function Taste() {
           </div>
         ))}
       </div>
-      
+      <button>
+        Read More
+      </button>
+    </div>
+  );
+}
+
+
+export function Recipes() {
+  return (
+    <div className={styles['center']}>
+      <Cards>
+        {images.map((image) => (
+          <div key={image.id}>
+            <img src={image.img} alt="African Foods" />
+            
+    </div>
+      ))}          
+      </Cards>
+          <button className={styles["read-more"]}>
+            Read More
+          </button>
+
     </div>
   );
 }

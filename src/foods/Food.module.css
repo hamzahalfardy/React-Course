@@ -89,8 +89,7 @@
   color: #fff;
 }
 
-.Lorem button, 
-.food-taste button{
+button{
   background-color: orange;
   border: none;
   border-radius: 15px;
@@ -99,6 +98,8 @@
   padding: 10px 20px;
   font-size: medium;
   cursor: pointer;
+  margin-top: 20px;
+
 }
 
 .food-taste {
@@ -152,5 +153,52 @@
   line-height: 1.4;
 }
 
+.recipe {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  max-width: 600px; /* ✅ control total width */
+  margin: 50px auto; /* ✅ center the grid */
+}
 
+.recipe img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.read-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.footer{
+  
+}
+
+
+.footer img{
+  width: 90px;    
+  height: 90px;
+  object-fit: contain;
+  margin-right: 15px;
+}
 
