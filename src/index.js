@@ -1,37 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {  NavBar, Restaurant, Taste, Recipes } from './foods/Food'
+// import {  NavBar, Restaurant, Taste, Recipes, Blog } from './Components/Foods/Food';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-const navBar = ReactDOM.createRoot(document.querySelector('#nav-Bar'));
+const navBar = ReactDOM.createRoot(document.querySelector('#Food-Restaurant'));
 navBar.render(
     <React.StrictMode>
-        <NavBar />
+        <App />
     </React.StrictMode>
 )
-
-const topImage = ReactDOM.createRoot(document.getElementById('top-image'));
-topImage.render(
-    <React.StrictMode>
-        <Restaurant />
-    </React.StrictMode>
-);
-
-
-ReactDOM.createRoot(document.getElementById('taste')).render(
-    <React.StrictMode>
-        <Taste />
-    </React.StrictMode>
-);
-
-ReactDOM.createRoot(document.getElementById('recipes')).render(
-    <React.StrictMode>
-        <Recipes />
-    </React.StrictMode>
-)
-
 
 
 
